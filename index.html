@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emil Henriksson — Apps</title>
+<meta name="description" content="Apps by Emil Henriksson.">
+<style>
+  :root { --bg:#0B1322; --surface:#131D30; --border:#1E2B41; --accent:#5AA6F0; --ink:#EEF3FA; --ink-mute:#93A4BD; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#F6F8FC; --surface:#FFFFFF; --border:#DCE4F0; --accent:#1C6FD0; --ink:#0B1322; --ink-mute:#5A6B85; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink); min-height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:32rem; width:100%; padding:3rem 16px; }
+  h1 { font-size:1.35rem; font-weight:600; letter-spacing:-.02em; margin:0 0 .4rem; }
+  .sub { color:var(--ink-mute); margin:0 0 2rem; font-size:.95rem; }
+  a.card {
+    display:block; background:var(--surface); border:1px solid var(--border);
+    border-radius:12px; padding:1.15rem 1.3rem; text-decoration:none; color:inherit;
+    transition:border-color .15s ease;
+  }
+  a.card:hover { border-color:var(--accent); }
+  .name { font-size:1.1rem; font-weight:600; letter-spacing:-.01em; }
+  .name span { color:var(--accent); }
+  .desc { color:var(--ink-mute); font-size:.92rem; margin:.3rem 0 0; }
+  .links { margin:.75rem 0 0; font-size:.86rem; }
+  .links a { color:var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Emil Henriksson</h1>
+    <p class="sub">Apps for iPhone.</p>
+    <a class="card" href="./daytrend/">
+      <div class="name">Day<span>trend</span></div>
+      <p class="desc">A one-minute daily diary. Rate what matters, then see the patterns.</p>
+    </a>
+    <p class="links">
+      <a href="./daytrend/">Support</a> &middot;
+      <a href="./daytrend/privacy-policy.html">Privacy policy</a>
+    </p>
+  </div>
+</body>
+</html>
